@@ -4,7 +4,7 @@ app = Flask(__name__) # __name__ gives a file a unique name.
 
 stores =[
 	{
-		'name': 'My wonderful Store',
+		'name': 'My Wonderful Store',
 		'items': [
 			{
 				'name': 'My Item',
@@ -30,7 +30,7 @@ def create_store():
 		'name': request_data['name'],
 		'items': []
 	}
-	store.append(new_store)
+	get_stores.append(new_store)
 	return jsonify(new_store)
 
 # GET /store/<string:name>
